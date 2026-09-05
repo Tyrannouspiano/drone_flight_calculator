@@ -6,9 +6,10 @@ def calculate_flight_time(weight_grams):
         raise ValueError("Weight cannot be negative")
     flight_time = 180 - 0.1 * weight_grams
     if flight_time < 0:
-        raise ValueError("Flight time cannot be negative")
+        return 0
     return flight_time
-    #These 2 if statements were accepted
+    #The first if statement was accepted as is
+    #The second if statement was edited to return 0 instead of raising an error
 
 #Returns a list of (weight, flight_time) pairs for payload weights from 0 to max_weight_grams in steps of step_grams, calling
 #calculate_flight_time for each weight
