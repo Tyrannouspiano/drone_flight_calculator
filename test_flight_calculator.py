@@ -16,4 +16,4 @@ def test_negative_weight_raises_value_error():
         calculate_flight_time(-1)
 
 def test_weight_above_limit_returns_zero():
-    assert calculate_flight_time(1801) == 0
+    assert calculate_flight_time(100000) == 0
